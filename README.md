@@ -30,19 +30,29 @@ git clone [https://github.com/1fan-Song/Medical-Research-Agent.git](https://gith
 cd Medical-Research-Agent
 ```
 
-### 2. Install Dependencies
+### 2. Environment Setup & Dependencies
+This project recommends using Conda for environment isolation, strictly compatible with Python 3.10 - 3.13.
+
+Option A: Using Conda (Recommended)
+
 ```bash
+conda env create -f environment.yml
+conda activate medical-agent-env
+```
+Option B: Using pip (Requires local Python >= 3.10)
+
+```Bash
 pip install -r requirements.txt
 ```
-### 3. Environment Configuration
+3. API Configuration
 Create a .env file in the root directory and add your API credentials (compatible with any LLM provider supporting the OpenAI format):
+
 ```ini
 OPENAI_API_KEY=your_api_key_here
 OPENAI_API_BASE=your_api_base_url_here
 MODEL_NAME=your_model_name (e.g., gemini-2.5-flash)
 ```
 (Note: Ensure .env is included in your .gitignore to prevent secret leakage.)
-
 ### 4. Run the Application
 ```bash
 streamlit run web_app.py
