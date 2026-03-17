@@ -27,12 +27,20 @@
 git clone https://github.com/1fan-Song/Medical-Research-Agent.git
 cd Medical-Research-Agent
 ```
+### 2. 环境配置与依赖安装
 
-### 2. 安装依赖
+本项目推荐使用 **Conda** 进行环境隔离，已严格指定兼容的 Python 版本 (Python 3.10 - 3.13)。
+
+**方式一：使用 Conda (推荐)**
 ```bash
+conda env create -f environment.yml
+conda activate medical-agent-env
+```
+方式二：使用 pip (需确保本地 Python >= 3.10)
+```
+bash
 pip install -r requirements.txt
 ```
-
 ### 3. 环境配置
 在项目根目录创建 .env 文件，并填入您的 API 配置（兼容任何支持 OpenAI 格式的大模型服务商）：
 ```ini
