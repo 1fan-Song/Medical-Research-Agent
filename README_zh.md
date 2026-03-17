@@ -45,7 +45,7 @@ MODEL_NAME=your_model_name (e.g., gemini-2.5-flash)
 ```bash
 streamlit run web_app.py
 ```
-启动后，浏览器将自动打开 http://localhost:8501。 您可以在左侧边栏上传本地 PDF 文献，并在主界面输入医学科研问题开始检索。
+启动后，浏览器将自动打开 `http://localhost:8501`。 您可以在左侧边栏上传本地 PDF 文献，并在主界面输入医学科研问题开始检索。
 
 ### 📂 项目结构
 ```Plaintext
