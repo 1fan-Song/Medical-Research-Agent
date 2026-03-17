@@ -1,0 +1,18 @@
+# 1. 核心机密（绝对不能上传！）
+.env
+
+# 2. 本地测试生成的文件（保持云端仓库干净）
+*.md
+!README.md
+papers/
+
+# 3. Python 运行时产生的垃圾文件
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# 4. 虚拟环境（如果你的环境建在项目里的话）
+venv/
+env/
+.venv/
