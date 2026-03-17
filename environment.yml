@@ -1,0 +1,21 @@
+name: medical-agent-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # 强制锁定 Python 版本区间，兼容你的 3.13，同时照顾主流的 3.10+
+  - python>=3.10,<3.14
+  - pip
+  - pip:
+      # 核心大模型与工作流框架
+      - langchain>=0.1.0
+      - langchain-openai>=0.0.2
+      - langgraph>=0.0.20
+      # 前端交互界面
+      - streamlit>=1.32.0
+      # 医学文献与本地文档解析
+      - biopython>=1.83
+      - PyMuPDF>=1.23.21
+      # 环境变量与网络请求
+      - python-dotenv>=1.0.1
+      - requests>=2.31.0
